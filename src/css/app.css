@@ -1,0 +1,93 @@
+/* This is a bit better than setting border-box everywhere */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: Poppins;
+    background-image: url("http://umad.com/img/2015/6/pizza-food-wallpaper-hd-1876-1973-hd-wallpapers.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.myButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spinningimg {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.spinningimg:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color:rgba(0, 0, 0, 0.5)
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 6px 0 6px 10px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #4CAF50;
+    border-radius: 20 20 20 20;
+    width: 120px;
+}
+
+
+.pizzas{
+display: flex;
+flex-direction: column;
+max-width: 25%;
+background-color: rgba(255, 255, 255, 1);
+padding: 15px;
+}
+
+.pizzas img {
+width: 100%;
+margin-bottom: 40px;
+}
+
+.videoframe {
+  border: 15px;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.nicknameandemail {
+  background-color: #4CAF50;
+  color: white;
+  padding:5px;
+}
+
+.nicknameandemail >*{
+  margin:5px;
+}
